@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Alouani Habib Experience</title>
+    <link rel="shortcut icon" href="./images/fav.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>-->
+  </head>
+  <body>
+    <nav class="main-nav fix-nav">
+        <ul class="nav">
+          <li class="name">Alouani Habib</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#" class="active">Experience</a></li>
+        </ul>
+    </nav>
+    <header>
+      <img src="http://placeimg.com/400/400/people" alt="This is a random IMG" class="profile-image">
+      <h1 class="tag name p">Hello, I’m Habib.</h1>
+      <p class="tag location">My home is Beni Mellal, Morroco.</p>
+    </header>
+    <main class="flex">
+      <div class="cardM cardJ">
+<!--        <h2>Experience</h2>-->
+            <fieldset>
+              <legend>Hobby</legend>
+              <ul class="fld-il">
+                <li>Karate</li>
+                <li>Watching Korean and Japanies Series</li>
+                <li>Building Website Page</li>
+                <li>PhP Fan</li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Education</legend>
+              <ul class="fld-il">
+                <li>Baccalaureate of Human Sciences</li>
+                <li>Software development technician</li>
+                <li>TreeHouse</li>
+              </ul>
+            </fieldset>
+      </div>  
+    </main>
+    <footer>
+       <div class="group">
+        <div class="Sitmap">
+          <h4>Profile Map</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Experience.html">Experience</a></li>
+            </ul>
+        </div>
+        <div class="SocialMedia">
+          <h4>Social Media</h4>
+            <ul>
+              <li><a href="https://github.com/envythegreat" target="_blank"><img src="./images/github.svg" class="social" alt=""><span>Github</span></a></li>
+            </ul>
+        </div>
+      </div>
+      <div class="editor">
+        <p>Powered by Habib  &copy; 2019</p>
+      </div>
+  </footer>
+
+    <script>
+          jQuery(document).ready(function(){
+            $(window).scroll(function(){
+            var top = $(window).scrollTop();
+              if(top>=60){
+                $("nav").addClass('fix-nav-cl');
+              }
+              else
+                if($("nav").hasClass('fix-nav-cl')){
+                          $("nav").removeClass('fix-nav-cl');
+                    } 
+            });
+          });
+    </script>
+  </body>
+</html>
